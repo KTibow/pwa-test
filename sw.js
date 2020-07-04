@@ -1,6 +1,6 @@
 var cacheName = 'test-pwa-v1';
 console.log('Service Worker: Hello there!');
-self.addEventListener('install', (e) = > {
+self.addEventListener('install', (e) => {
     if (navigator.onLine) {
         console.log('Online, skip wait');
         self.skipWaiting();
