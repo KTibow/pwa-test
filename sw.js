@@ -22,5 +22,5 @@ self.addEventListener('install', (e) => {
 });
 self.addEventListener('fetch', function(event) {
     console.log('Service Worker: We got a (no, not fish) fetch!', event.request);
-    return caches.match(event.request.url);
+    event.respondWith(caches.match(event.request.url));
 });
