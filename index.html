@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test PWA</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" sizes="853x853" href="maskable_icon.png">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#00bbff">
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').then(function() { console.log("Service Worker Registered"); });
+      }
+    </script>
+    <style>
+      * {
+        font-family: Open Sans, Arial, sans-serif;
+      }
+      h1 {
+        color: #60E;
+        height: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test PWA</h1>
+  </body>
+</html>
