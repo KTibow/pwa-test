@@ -10,8 +10,8 @@ self.addEventListener('install', (e) => {
         console.log('Service Worker: Caching caches...');
         return cache.addAll(['/pwa-test/', '/pwa-test/maskable_icon.png', '/pwa-test/sw.js', '/pwa-test/manifest.json']);
     }));
-    e.waitUntil(caches.keys().then((keyList) = > {
-        return Promise.all(keyList.map((key) = > {
+    e.waitUntil(caches.keys().then((keyList) => {
+        return Promise.all(keyList.map((key) => {
             if (key !== cacheName) {
                 console.log('Service Worker: Bye-Bye', key);
                 return caches.delete(key);
