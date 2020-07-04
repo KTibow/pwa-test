@@ -6,7 +6,7 @@ self.addEventListener('install', (e) => {
         self.skipWaiting();
     };
     console.log('Service Worker: Installing...');
-    e.waitUntil(caches.open(cacheName).then((cache) = > {
+    e.waitUntil(caches.open(cacheName).then((cache) => {
         console.log('Service Worker: Caching caches...');
         return cache.addAll(['/pwa-test/', '/pwa-test/maskable_icon.png', '/pwa-test/sw.js', '/pwa-test/manifest.json']);
     }));
