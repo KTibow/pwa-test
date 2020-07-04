@@ -1,0 +1,19 @@
+{
+  "short_name": "PWA Test",
+  "name": "PWA Test: Just Testing!",
+  "description": "A PWA Test",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "maskable_icon.png",
+      "type": "image/png",
+      "sizes": "930x930",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/pwa-test/",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/pwa-test/",
+  "theme_color": "#ff4081"
+}
